@@ -1,0 +1,25 @@
+# Python bytecode and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Runtime and user data
+inventory.db
+inventory.db-*
+*.sqlite
+*.sqlite3
+*.log
+logs/
+barcode_images/
+
+# Local exports and backups
+exports/
+backups/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
