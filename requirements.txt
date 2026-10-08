@@ -1,0 +1,6 @@
+# Inferred from imports in inventory.py; verify working versions in a clean environment.
+PyQt5>=5.15,<6
+openpyxl>=3.1,<4
+Pillow>=10,<13
+pyzbar>=0.1.9,<1
+python-barcode>=0.15,<1
