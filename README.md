@@ -52,7 +52,8 @@ The app creates a local `inventory.db` database and initially shows its login wi
 - The current `hash_password` function uses **unsalted SHA-256**. This is not sufficient for real user-password storage. Replace it with Argon2id or another suitable adaptive password hash, including salt and migration of old accounts, before production use.
 - `.gitignore` excludes local `inventory.db`, logs, exports, virtual environments, and generated barcode images. It does not erase files previously committed to Git history.
 - Back up local inventory data securely and review access controls before handling genuine business records.
-- This project has no verified automated test suite or production security review.
+- A GitHub Actions smoke test has passed package installation, Python syntax, and local SQLite initialization with a disposable database. This does **not** validate the GUI, authentication safety, production data handling, or a full end-to-end workflow.
+- Run the offline smoke test with `python -m unittest discover -s tests -p 'test_*.py' -v` after installing system `zbar` and the packages in `requirements.txt`.
 
 ## Repository contents
 
